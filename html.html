@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>แนะนำตัว — หน้าโหลด Wuthering Waves</title>
+  <style>
+    :root{
+      --bg:#f5f9f7;
+      --card:#ffffff;
+      --accent:#34c759;
+      --muted:#556;
+      --maxw:920px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Noto Sans Thai", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#eaf6ef 0%,var(--bg) 100%);
+      color:var(--muted);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:24px;
+    }
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      background:var(--card);
+      border-radius:14px;
+      box-shadow:0 10px 30px rgba(20,30,20,0.08);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 360px 1fr;
+      gap:0;
+    }
+    @media (max-width:800px){
+      .container{grid-template-columns: 1fr}
+    }
+    .left{
+      background:linear-gradient(180deg,#f8fff7,#eef9ef);
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      gap:12px;
+    }
+    .avatar{
+      width:100%;
+      height: auto;
+      border-radius:10px;
+      border:6px solid rgba(255,255,255,0.85);
+      box-shadow:0 8px 18px rgba(30,50,30,0.06);
+      object-fit:cover;
+    }
+    .badge{
+      margin-top:6px;
+      font-size:13px;
+      color:#2f6b3a;
+      background:rgba(52,199,89,0.08);
+      padding:6px 10px;
+      border-radius:999px;
+    }
+
+    .right{
+      padding:26px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      justify-content:center;
+    }
+    h1{
+      margin:0;
+      font-size:24px;
+      color:#13421e;
+    }
+    p.lead{
+      margin:6px 0 0 0;
+      line-height:1.6;
+      color:#334;
+    }
+    .meta{
+      font-size:13px;
+      color:#556;
+      margin-top:8px;
+    }
+    .buttons{
+      margin-top:18px;
+      display:flex;
+      gap:12px;
+    }
+    a.btn{
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:600;
+      box-shadow:0 6px 18px rgba(20,40,20,0.06);
+    }
+    .btn-primary{
+      background:linear-gradient(90deg,#2dbb6f,#1fa45f);
+      color:white;
+    }
+    .btn-secondary{
+      background:transparent;
+      color:var(--muted);
+      border:1px solid #e6efe6;
+    }
+    footer{
+      margin-top:18px;
+      font-size:12px;
+      color:#6a6a6a;
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <section class="left" aria-label="รูปภาพ">
+      <!-- ใช้พาธไฟล์ที่อัปโหลดมาเป็น src -->
+      <img class="avatar" src="IMG_0521.jpg" alt="ภาพตัวอย่าง" />
+      <div class="badge">ยินดีที่ได้รู้จัก 🌿</div>
+    </section>
+
+    <section class="right" aria-label="ข้อมูลแนะนำตัว">
+      <div>
+        <h1> — ผมชื่อ TZero</h1>
+        <p class="lead">
+            ผมชอบเล่นเกม อ่านนิยาย และเขียนโปรแกรม เป็นคนชอบสำรวจโลกจินตนาการ
+            รูปด้านซ้ายเป็นภาพที่ชอบ — ถ้าชอบเหมือนกัน กดลิงก์ด้านล่างเพื่อไปหน้าดาวน์โหลดของเกม <strong>Wuthering Waves</strong> ได้เลย
+        </p>
+        <p class="meta"></p>
+      </div>
+
+      <div class="buttons" role="navigation" aria-label="ลิงก์ดาวน์โหลด">
+        <!-- ปุ่มไปหน้าดาวน์โหลดอย่างเป็นทางการ -->
+        <a class="btn btn-primary" href="https://wuthering-waves.com/download/" target="_blank" rel="noopener noreferrer">
+          ดาวน์โหลด Wuthering Waves
+        </a>
+
+        <!-- ปุ่มสำรองไปหน้า Kuro Games -->
+        <a class="btn btn-secondary" href="https://wutheringwaves.kurogames.com/en/main/" target="_blank" rel="noopener noreferrer">
+          หน้าอย่างเป็นทางการ (Kuro Games)
+        </a>
+      </div>
+
+      <footer>
+        <img class="footer-img" src="" alt="Kuro Games Logo" width="322" height="215">
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
